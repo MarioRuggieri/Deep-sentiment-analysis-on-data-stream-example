@@ -1,5 +1,5 @@
-# Deep sentiment analysis on stream data (example)
-Text stream sentiment analysis using a distributed deep learning approach based on Convolutional Neural Networks. 
+# Deep distributed sentiment analysis on stream data (example)
+Text <b>stream</b> sentiment analysis using a <b>distributed</b> deep learning approach based on Convolutional Neural Networks. 
 
 Language: Python 2.7
 
@@ -74,7 +74,9 @@ e-mail: mario.ruggieri@uniparthenope.it
       --executor-cores 4 \
       --executor-memory 60g \
       --num-executors 1 \
-      [HERE RELATIVE PATH TO cnn_stream_classifier.py]
+      [HERE RELATIVE PATH TO cnn_stream_classifier.py] \
+      --checkpoint_path [HERE PATH TO THE CHECKPOINT PATH] \
+      --log_path [HERE PATH TO THE LOG PATH]
 
     ${SPARK_HOME}/bin/spark-submit  \
     --py-files ${PYTHON_API_ZIP_PATH},[HERE ABSOLUTE PATH TO lstm_word_prediction_single_out.p] \
@@ -86,7 +88,9 @@ e-mail: mario.ruggieri@uniparthenope.it
     --executor-cores 4 \
     --executor-memory 60g \
     --num-executors 1 \
-    [HERE RELATIVE PATH TO lstm_word_prediction_single_out.p]
+    [HERE RELATIVE PATH TO lstm_word_prediction_single_out.p] \
+    --checkpoint_path [HERE PATH TO THE CHECKPOINT PATH]
+    --log_path [HERE PATH TO THE LOG PATH]
 
 # License
 
