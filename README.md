@@ -1,4 +1,4 @@
-# Deep distributed sentiment analysis on stream data (example)
+# Deep distributed sentiment analysis on data stream (example)
 Text <b>stream</b> sentiment analysis using a <b>distributed</b> deep learning approach based on Convolutional Neural Networks. 
 
 Language: Python 2.7
